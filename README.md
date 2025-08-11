@@ -11,7 +11,7 @@
 - `venv/`: Python仮想環境
 
 ### 2クラス分類
-- `binary_classification_analysis.py`: 2クラス分類のメイン分析スクリプト
+- `binary_classification_analysis.py`: LightGBMを使用した2クラス分類のメイン分析スクリプト
 - `binary_classification_notebook.ipynb`: 2クラス分類のJupyter Notebook
 - `generate_sample_data.py`: サンプルデータ生成スクリプト
 - `binary_classification_data.csv`: 分析用サンプルデータ
@@ -49,6 +49,13 @@ jupyter lab data_analysis_sample.ipynb
 
 - **データ可視化**: matplotlib, seaborn, plotlyを使用
 - **統計分析**: pandas, numpy, scipyを使用  
-- **機械学習**: scikit-learnを使用した分類・回帰・クラスタリング
-- **2クラス分類**: Random Forest, Logistic Regression, SVMの比較
+- **機械学習**: scikit-learn、LightGBMを使用した分類・回帰・クラスタリング
+- **2クラス分類**: LightGBMによる高速で高精度な分類
 - **評価指標**: Recall, Precision, F1-Score, Accuracyの算出
+
+## 変更履歴
+
+### 2025-08-11: LightGBMへの移行
+- 2値分類モデルをRandom Forest、Logistic Regression、SVMからLightGBMに変更
+- スケーラビリティと精度の向上を実現
+- LightGBM 4.1.0をrequirements.txtに追加
